@@ -1,3 +1,5 @@
+package com.example.medilux;
+
 import android.content.Context;
 import android.graphics.Color;
 import android.graphics.drawable.GradientDrawable;
@@ -14,11 +16,11 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_join2);
 
         Context context = this;
 
-        // Container for the whole UI
+       /* // Container for the whole UI
         RelativeLayout container = findViewById(R.id.container);
         container.setLayoutParams(new RelativeLayout.LayoutParams(360, 740));
         container.setBackgroundColor(Color.WHITE);
@@ -29,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
                 RelativeLayout.LayoutParams.MATCH_PARENT,
                 RelativeLayout.LayoutParams.MATCH_PARENT
         ));
-        container.addView(stackLayout);
+        container.addView(stackLayout);*/
 
         // Other UI elements such as Positioned, Container, Text, etc., should be created similarly.
         // Due to space constraints, I'm providing a generalized approach instead of detailed Java code for each widget.

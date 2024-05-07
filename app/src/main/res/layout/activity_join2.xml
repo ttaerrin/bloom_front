@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingConstraints"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/edittext_background"
+    >
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:fontStyle="normal"
+        android:lineSpacingExtra="0sp"
+        android:text="갱년기 건강 관리를 위한 공간, \n블룸에 오신 것을 환영합니다. "
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText"
+        tools:layout_editor_absoluteX="68dp"
+        tools:layout_editor_absoluteY="181dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:fontFamily="sans-serif"
+        android:fontStyle="normal"
+        android:hint="이메일 주소를 입력해주세요."
+        android:paddingStart="16dp"
+        android:paddingTop="14.5dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="14.5dp"
+        android:textColorHint="#21242A"
+        android:textSize="13.55sp"
+        android:textStyle="normal"
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="275dp" />
+
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="이메일로 로그인"
+        android:textColor="@android:color/white"
+        android:background="@color/button_purple"
+        android:textSize="16.25sp"
+        android:textStyle="normal"
+        tools:ignore="HardcodedText"
+        tools:layout_editor_absoluteX="68dp"
+        tools:layout_editor_absoluteY="341dp" />
+   <!-- //app:layout_constraintTop_toTopOf="parent"
+    //버튼 색깔 바꾸기
+    //버튼 색깔 연한 보라색으로 바꾸기
+    //  android:background="button_purple""-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:fontStyle="normal"
+        android:text="간편 로그인"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        tools:ignore="HardcodedText"
+        tools:layout_editor_absoluteX="159dp"
+        tools:layout_editor_absoluteY="466dp" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/firstConstraintLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="ExtraText,MissingConstraints">
+
+
+        <Button
+            android:layout_width="293dp"
+            android:layout_height="52dp"
+            android:text=" 카카오로 계속하기 "
+            android:background="@color/button_yellow"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="547dp"/>
+        <!--//무튼 background 색상이 들어나도록
+        //버튼 색깔 노란색으로 바꾸기
+-->
+
+        <Button
+            android:layout_width="297dp"
+            android:layout_height="53dp"
+            android:text=" 네이버로 계속하기 "
+            android:background="@color/button_green"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="607dp" />
+
+        //버튼 색깔 초록색으로 바꾸기
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

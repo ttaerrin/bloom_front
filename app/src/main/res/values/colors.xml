@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="edittext_background">#FFFFFF</color> <!-- EditText 배경색 -->
+    <color name="button_purple">#7B1FA2</color> <!-- 버튼 연한 보라색 -->
+    <color name="button_yellow">#FEE500</color> <!-- 버튼 노란색 -->
+    <color name="button_green">#4CAF50</color> <!-- 버튼 초록색 -->
 </resources>
+
+
+    <!--
+    <?xml version="1.0" encoding="utf-8"?>
+    <resources>
+        <color name="colorPrimary">#FFC107</color>
+        <color name="colorPrimaryDark">#FF7043</color>
+        <color name="colorAccent">#FFAB40</color>
+        <color name="colorGray">#8C8C8C</color>
+    </resources>-->
+
+    <!--<?xml version="1.0" encoding="utf-8"?>
+    <resources>
+        <color name="edittext_background">#FEE500</color> &lt;!&ndash; EditText 배경색 &ndash;&gt;
+
+    </resources>-->
