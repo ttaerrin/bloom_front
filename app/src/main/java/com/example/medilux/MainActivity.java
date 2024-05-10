@@ -1,13 +1,15 @@
 package com.example.medilux;
 
 import android.content.Context;
-import android.graphics.Color;
-import android.graphics.drawable.GradientDrawable;
+import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
+import android.text.Spannable;
+import android.text.SpannableString;
+import android.text.style.StyleSpan;
 import android.view.View;
-import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
+
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -16,26 +18,36 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_join2);
+        setContentView(R.layout.activity_join);
+
+
+        TextView textView = findViewById(R.id.textView);
+
+        // TextView 클릭 이벤트 처리
+        textView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // SignUpActivity로 이동
+                startActivity(new Intent(MainActivity.this, SignupActivity.class));
+            }
+        });
+
 
         Context context = this;
 
-       /* // Container for the whole UI
-        RelativeLayout container = findViewById(R.id.container);
-        container.setLayoutParams(new RelativeLayout.LayoutParams(360, 740));
-        container.setBackgroundColor(Color.WHITE);
+        SpannableString spannableString = new SpannableString("아직 가입 전이신가요? 회원가입하기");
 
-        // Stack layout
-        RelativeLayout stackLayout = new RelativeLayout(context);
-        stackLayout.setLayoutParams(new RelativeLayout.LayoutParams(
-                RelativeLayout.LayoutParams.MATCH_PARENT,
-                RelativeLayout.LayoutParams.MATCH_PARENT
-        ));
-        container.addView(stackLayout);*/
+            // "아직 가입 전이신가요?~ " 부분의 글자 굵기 설정한 코드
+        spannableString.setSpan(new StyleSpan(Typeface.NORMAL), 0, 12, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
 
-        // Other UI elements such as Positioned, Container, Text, etc., should be created similarly.
-        // Due to space constraints, I'm providing a generalized approach instead of detailed Java code for each widget.
 
-        // You can create other UI elements programmatically and add them to the stackLayout using RelativeLayout.LayoutParams.
+        spannableString.setSpan(new StyleSpan(Typeface.BOLD), 13, spannableString.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+
+        textView.setText(spannableString);
+
+
+
+
+
     }
 }
