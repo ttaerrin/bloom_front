@@ -1,34 +1,30 @@
 package com.example.medilux;
 
+
+
 import android.graphics.Color;
 import android.os.Bundle;
 import android.text.Spannable;
 import android.text.SpannableString;
 import android.text.style.RelativeSizeSpan;
-import android.text.style.StyleSpan;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
-import static android.graphics.Typeface.BOLD;
-
 public class MainActivity extends AppCompatActivity {
-    private CustomCalendarView customCalendarView;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calendar);
 
-        customCalendarView = findViewById(R.id.custom_calendar_view);
-        customCalendarView.setDayColor(15, Color.BLUE);
-        customCalendarView.setDayDot(15, true);
-        customCalendarView.setDayColor(20, Color.GREEN);
-        customCalendarView.setDayDot(20, true);
+        TextView textView = findViewById(R.id.textView);
+        String text = "증상   마지막 기록 오늘 10 :48 AM";
 
+        SpannableString spannableString = new SpannableString(text);
+        spannableString.setSpan(new RelativeSizeSpan(1.5f), 0, 2, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE); // "증상"을 더 크게 설정
 
+        textView.setText(spannableString);
     }
 }
-
 
 
 

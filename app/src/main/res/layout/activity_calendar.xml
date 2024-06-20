@@ -32,6 +32,8 @@
         tools:layout_editor_absoluteX="26dp"
         tools:layout_editor_absoluteY="399dp" />
 
+
+
     <ImageView
         android:layout_width="44dp"
         android:layout_height="33dp"
@@ -50,19 +52,27 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
+
 <!--    <Button-->
 
 <!--        android:layout_width="320dp"-->
 <!--        android:layout_height="40dp"-->
-
+<!--        android:background="#E5C2FF"-->
 <!--        android:text="증상   마지막 기록 오늘 10 :48 AM-->
 <!--        tools:layout_editor_absoluteX="-->
 <!--        tools:layout_editor_absoluteX="26dp"-->
-<!--        tools:layout_editor_absoluteY="432dp" />26dp"-->
-<!--        tools:layout_editor_absoluteY="431dp"-->
+<!--        tools:layout_editor_absoluteY="432dp" />-->
 
-
-
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:background="#E5C2FF"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textColor="#000000"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="435dp" />
 
     <RelativeLayout
         android:id="@+id/frame_4581"
