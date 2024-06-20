@@ -1,0 +1,84 @@
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="140dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="2024년 3월"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="오늘의 건강을 기록해보세요."
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="399dp" />
+
+    <ImageView
+        android:layout_width="44dp"
+        android:layout_height="33dp"
+        android:src='@drawable/ic_launcher_foreground3'
+        tools:layout_editor_absoluteX="251dp"
+        tools:layout_editor_absoluteY="29dp" />
+
+    <ImageView
+        android:layout_width="55dp"
+        android:layout_height="57dp"
+        android:src='@drawable/ic_launcher_foreground2'
+        tools:layout_editor_absoluteX="340dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+<!--    <Button-->
+
+<!--        android:layout_width="320dp"-->
+<!--        android:layout_height="40dp"-->
+
+<!--        android:text="증상   마지막 기록 오늘 10 :48 AM-->
+<!--        tools:layout_editor_absoluteX="-->
+<!--        tools:layout_editor_absoluteX="26dp"-->
+<!--        tools:layout_editor_absoluteY="432dp" />26dp"-->
+<!--        tools:layout_editor_absoluteY="431dp"-->
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/frame_4581"
+        android:layout_width="315dp"
+        android:layout_height="300dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteY="88dp" >
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/calendar" />
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

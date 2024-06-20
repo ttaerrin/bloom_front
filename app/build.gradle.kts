@@ -6,6 +6,10 @@ android {
     namespace = "com.example.medilux"
     compileSdk = 33
 
+    dependencies {
+        implementation 'com.prolificinteractive:material-calendarview:2.0.1'
+    }
+
     defaultConfig {
         applicationId = "com.example.medilux"
         minSdk = 24
